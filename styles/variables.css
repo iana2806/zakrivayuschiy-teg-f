@@ -1,8 +1,8 @@
 :root {
   --main-font: "Inter", sans-serif;
   --accent-font: "PressStart2P", monospace;
-  --font-weight-regular: "wght" 400;
-  --font-weight-bold: "wght" 785;
+  --font-weight-regular: "wght" 410;
+  --font-weight-bold: "wght" 715;
   --bg-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0,

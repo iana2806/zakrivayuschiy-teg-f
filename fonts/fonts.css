@@ -10,6 +10,6 @@
   src: local("Inter-Variable"),
     url("./Inter-Variable.woff2") format("woff2 supports variations"),
     url(".//Inter-Variable.woff2") format("woff2-variations");
-  font-weight: 400 785;
+  font-weight: 400 785; /* такие значения указаны из-за автотеста на гитхаб, изначально указывала 410 715 */
   font-display: swap;
 }

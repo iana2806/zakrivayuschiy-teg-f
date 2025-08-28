@@ -22,7 +22,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--font-weight-regular);
+  font-variation-settings: "wght" var(--font-weight-regular);
 }
 
 .header {
@@ -66,16 +66,20 @@
 .card__title {
   padding: 4px 10px;
   font-size: 18px;
-  font-variation-settings: var(--font-weight-bold);
+  font-variation-settings: "wght" var(--font-weight-bold);
 }
 
 .card__image {
-  inline-size: 100%;
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .image__wrapper {
   position: relative;
   z-index: 0;
+  border-top: var(--border-image);
+  border-bottom: var(--border-image);
 }
 
 .card__label {
@@ -252,6 +256,9 @@ dialog[open] {
 .dialog__save-icon {
   position: relative;
   z-index: 2;
+  flex-shrink: 0;
+  justify-self: center;
+  color: #fff;
   inline-size: 39px;
   block-size: 39px;
   mix-blend-mode: difference;
@@ -308,6 +315,7 @@ dialog::backdrop {
 }
 
 .core {
+  fill: transparent;
   transition: fill 0.3s linear 0.03s;
 }
 
@@ -327,6 +335,7 @@ dialog::backdrop {
 }
 
 .main-body {
+  fill: transparent;
   transition: fill 0.3s linear;
 }
 
@@ -367,6 +376,11 @@ dialog::backdrop {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .save-icon {
+    inline-size: 21px;
+    block-size: 21px;
   }
 
   dialog[open] {
